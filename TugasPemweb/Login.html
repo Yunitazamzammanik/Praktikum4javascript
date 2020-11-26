@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+</head>
+<body background="Login.html" style="background-color: rgb(121, 38, 54);" >
+
+    
+    
+        <h1 class="login" style="color: #5cdac5;">Log In</h1>
+        
+        <form action="" name="form">
+            <br><br>
+            <h4 label for="username" class="username" style="color: rgb(157, 218, 218);">Username  </h4>
+            <input id="username" type="text" name="username" placeholder="username" required>
+            <br><br>
+            <h4 label for="password" class="password" style="color: rgb(157, 218, 218);">Password </h4>
+            <input id="password" type="password" name="password" placeholder="password" required>
+            <br><br>
+            <button onclick="login()">Submit</button>
+    <h1 id="success"></h1>
+            
+        </form>
+        <script>
+            function login() {
+                var username = "yunitamanik"
+                var password = "05062002nita"
+    
+                var username_1 = document.getElementById('username').value;
+                var password_1 = document.getElementById('password').value;
+    
+                if(username_1 == username && password_1 == password){
+                    alert("success")
+                    window.location.href="berhasil.html"
+                    document.getElementById('success').innerHTML = 'Login berhasil'
+                }
+                else{
+                    document.getElementById('success').innerHTML = 'Login Invalid'
+                }
+    
+            }
+        </script> 
+        
+    
+    
+</body>
+</html>

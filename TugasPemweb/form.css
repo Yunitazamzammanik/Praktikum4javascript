@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 2 ;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    
+    background-color: rgb(74, 140, 194);
+}
+.FormValidation {
+    width: 800 px;
+    margin: 0 auto;           
+
+
+}

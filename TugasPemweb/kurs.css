@@ -1,0 +1,26 @@
+*{
+  margin: 0px;
+  padding: 0px;
+        
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    background-color: rgb(50, 153, 47);
+    justify-content: center;
+    align-items: center;
+}
+.table1 {
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(124, 61, 16);
+    background-color: rgb(41, 151, 151);
+    border-collapse: collapse;
+
+}
+.table1, th, td {
+    justify-content: center;
+    border: rgb(137, 125, 248);
+    color: darkblue;
+    background-color: rgb(97, 177, 130);
+    padding: 7px 5px;
+}

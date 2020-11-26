@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body background="Image.html" style="background-color: cornflowerblue;">
+    <br>
+    <h3>Yunita Zam Zam Manik</h3>
+    
+    <select onchange="change_pic (this.value) ">
+        
+         <option value="pilih">--Pilihan Bunga--</option>
+         <option value="mawar">Bunga Mawar</option>
+         <option value="kamboja">Bunga Kamboja</option>
+         <option value="sepatu">Bunga Sepatu</option>
+         <option value="sakura">Bunga Sakura</option>
+         <option value="matahari">Bunga Matahari</option>
+         <option value="kenanga">Bunga Kenanga</option>
+    </select> <br></br>
+    <img src ="" id ="gambar" alt ="">
+    <script>
+        function change_pic(set) {
+            var photo
+            if(set == "mawar") {
+               photo ='image/mawar.png'
+               alert("Mawar :'Teman adalah mawar kehidupan… petiklah dengan hati-hati dan hindari durinya!'")
+            } else if(set == "kamboja"){
+                photo = 'image/kamboja.jpg'
+                alert("Kamboja : 'Bunga yang indah rupa warnanya namun sering dipandang sebelah mata'")
+            } else if(set == "sepatu") {
+                photo = 'image/sepatu.jpg'
+                alert ("Sepatu :'Bunga yang melambangkan keindahan atau kecantikan seseorang'")
+            } else if(set == "sakura") {
+                photo = 'image/sakura.jpg'
+                alert ("Sakura : 'Bunga yang indah untuk kehidupan yang penuh harapan'")
+            } else if(set == "matahari") {
+                photo = 'image/matahari.jpg'
+                alert ("Matahari : 'Bunga yang mempunyai arti kesetiaan'")
+            } else if(set == "kenanga") {
+                photo = 'image/kenanga.jpg'
+                alert ("Kenanga : 'Bunga kenanga yang indah seperti kenangan bersama dia hehehe' ")
+            }
+            console.log(photo);
+            document.getElementById("gambar").src = photo
+        }
+    </script>
+</body>
+</html>

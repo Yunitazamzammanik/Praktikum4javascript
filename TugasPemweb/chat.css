@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.ChatBox{
+    position: relative;
+    width: 550px;
+    height: 600px;
+    border: rgb(111, 168, 223);
+}
+.ChatBox ul {
+    list-style: initial;
+    padding: 25px;
+}
+.ChatBox input,
+.ChatBox button {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding: 15px;
+}
+.ChatBox input {
+    left: 0;
+    padding: 15px;
+    width: 94%;
+}
+.ChatBox button {
+    width: 25%;
+}
